@@ -1,6 +1,6 @@
 # themis
 
- <img src="https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/bannerthemis.jpg">
+ <img src="https://github.com/Equipe-Skyfall/themis/blob/main/docs/bannerthemis.jpg">
 ### 📃 Respositórios
 
 ---
