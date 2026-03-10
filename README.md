@@ -5,19 +5,19 @@
 > _A API se trata de um projeto submetido à metodologia de ensino em implantação na Fatec São José dos Campos, do qual os alunos formam equipes baseadas na metodologia ágil SCRUM, tendo um aluno como Scrum Master, um sendo o Product Owner e o restante dos integrantes como Dev Team._
 
 <img src="https://github.com/Equipe-Skyfall/themis/blob/main/docs/bannerthemis.jpg">
-### 📃 Respositórios
 
 ---
 
-### 📃 Respositórios 
+### 📃 Repositórios
 - [Repositório App](https://github.com/Equipe-Skyfall/themis-app)
-- [Respositório BackEnd](https://github.com/Equipe-Skyfall/themis-back)
-- [Respositório BD](https://github.com/Equipe-Skyfall/themis-db)
+- [Repositório BackEnd](https://github.com/Equipe-Skyfall/themis-back)
+- [Repositório BD](https://github.com/Equipe-Skyfall/themis-db)
 
 ---
 
 ## 📑 Sumário
 - [Visão do Projeto](#visao-do-projeto)
+- [Dores do Cliente](#dores)
 - [Cronograma do Projeto](#cronograma)
 - [Tecnologias utilizadas](#tecnologias)
 - [Padrões de Commit](#padrao)
@@ -29,7 +29,7 @@
 
 ---
 
-## 🏥Dores do Cliente
+## 🏥 Dores do Cliente <a name="dores"></a>
 
 ### Verificar
 
@@ -71,126 +71,174 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 ## Cronograma de Sprints <a name="cronograma"></a>
 
-| Sprint | Data | Status | Relatório |
-|:------:|:----:|:------:|:---------:|
-| 1 | 16/03/2026 à 05/05/2026 | Não Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201)|
-| 2 | 13/04/2026 à 03/05/2026 | Não Concluído |[Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202)|
+| Sprint | Período | Status | Relatório |
+|:------:|:-------:|:------:|:---------:|
+| 1 | 16/03/2026 à 05/04/2026 | Não Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201) |
+| 2 | 13/04/2026 à 03/05/2026 | Não Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202) |
 | 3 | 11/05/2026 à 31/05/2026 | Não Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/tree/main/docs/Sprint%203) |
 
 ---
 
 ## 💻 Tecnologias utilizadas <a name="tecnologias"></a>
 
----
-
-### 📃 Estrutura de Branchs
-#### Main - Estado principal que armazena a versão estável do projeto
-#### Dev - Estado de desenvolvimento atual
-#### Sprint X - Instancia de todos respositórios ao fim da Sprint X
-### ⏳ Status do projeto: 0/3 Sprint
+> _A ser preenchido pelo time._
 
 ---
 
-## 💻 Padrões de commit <a name="padrao"></a>
+### 📃 Estrutura de Branches
+- **Main** — Estado principal que armazena a versão estável do projeto
+- **Dev** — Estado de desenvolvimento atual
+- **Sprint X** — Instância de todos os repositórios ao fim da Sprint X
+
+### ⏳ Status do projeto: 0/3 Sprints
+
+---
+
+## 💻 Padrões de Commit <a name="padrao"></a>
 
 **FEAT**: Adiciona um novo recurso ou funcionalidade.
-  Exemplo: FEAT - Adição da navbar
+> Exemplo: `FEAT - Adição da navbar`
 
 **FIX**: Corrige um bug.
-  Exemplo: FIX - Corrige o modal que não estava fechando
+> Exemplo: `FIX - Corrige o modal que não estava fechando`
 
-**CHORE**: Atualizações de manutenção que não alteram a lógica de negócio ou visual, como atualização de dependências, configurações de build, etc.
-  Exemplo: CHORE - Atualização das dependências do Node.js
+**CHORE**: Atualizações de manutenção que não alteram a lógica de negócio ou visual.
+> Exemplo: `CHORE - Atualização das dependências do Node.js`
 
-**DOCS**: Altera a documentação, como o README, comentários no código ou arquivos de documentação do projeto.
-  Exemplo: DOCS - Atualiza README com informações sobre novas rotas
+**DOCS**: Altera a documentação.
+> Exemplo: `DOCS - Atualiza README com informações sobre novas rotas`
 
-**STYLE**: Modifica a formatação do código, como espaços em branco, quebra de linha ou pontuação, sem alterar a lógica.
-  Exemplo: STYLE - Adiciona comentários no código para facilitar a leitura
+**STYLE**: Modifica a formatação do código sem alterar a lógica.
+> Exemplo: `STYLE - Adiciona comentários no código para facilitar a leitura`
 
-**REFACTOR**: Refatora o código sem adicionar novas funcionalidades ou corrigir bugs, visando melhorar a estrutura, legibilidade ou desempenho.
-  Exemplo: REFACTOR - Refatora o código, deixando-o mais leve
+**REFACTOR**: Refatora o código sem adicionar funcionalidades ou corrigir bugs.
+> Exemplo: `REFACTOR - Refatora o código, deixando-o mais leve`
 
-**TEST**: Adiciona, modifica ou remove testes unitários ou de integração.
-  Exemplo: TEST - Adiciona teste para o componente de login
+**TEST**: Adiciona, modifica ou remove testes.
+> Exemplo: `TEST - Adiciona teste para o componente de login`
 
 **PERF**: Melhora a performance.
-Exemplo: PERF - Otimiza a execução de consultas no banco de dados
+> Exemplo: `PERF - Otimiza a execução de consultas no banco de dados`
 
-**BUILD**: Altera o sistema de build ou as dependências externas, como npm, gradle, ou docker.
-  Exemplo: BUILD - Adiciona um Dockerfile para o ambiente de produção
+**BUILD**: Altera o sistema de build ou dependências externas.
+> Exemplo: `BUILD - Adiciona um Dockerfile para o ambiente de produção`
 
 **REVERT**: Reverte um commit anterior.
-  Exemplo: REVERT - Reverte a adição de autenticação de middleware
+> Exemplo: `REVERT - Reverte a adição de autenticação de middleware`
 
 **HOTFIX**: Corrige um bug crítico em produção de forma urgente.
-  Exemplo: HOTFIX - Corrige vulnerabilidade crítica na autenticação de usuários
+> Exemplo: `HOTFIX - Corrige vulnerabilidade crítica na autenticação de usuários`
 
-Convenções Adicionais
-
-Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
+> **Nomenclatura de variáveis:** padrão `camelCase` (ex: `nomeCompleto`).
 
 ---
 
-### Requisitos Funcionais <a name="requisitos"></a>
+## 📋 Requisitos <a name="requisitos"></a>
 
-| RF   | Nome                                      | Descritivo                                                                                                                                                     |
-| ---- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| RF01 | Upload de petição inicial                 | O sistema deve permitir que o usuário envie uma petição inicial em formato digital para análise automática.                                                    |
-| RF02 | Processamento do texto                    | O sistema deve analisar automaticamente o conteúdo textual da petição utilizando técnicas de processamento de linguagem natural.                               |
-| RF03 | Geração de resumo                         | O sistema deve gerar um resumo automático da petição destacando os principais pontos e informações relevantes do caso.                                         |
-| RF04 | Consulta à base de precedentes            | O sistema deve consultar automaticamente uma base nacional de precedentes jurídicos para identificar decisões relacionadas ao caso analisado.                  |
-| RF05 | Identificação de precedentes relacionados | O sistema deve identificar precedentes potencialmente relacionados com base na similaridade entre o texto da petição e os registros da base jurídica.          |
-| RF06 | Cálculo de similaridade                   | O sistema deve calcular um percentual de similaridade ou probabilidade de aplicabilidade entre a petição analisada e cada precedente encontrado.               |
-| RF07 | Classificação de aplicabilidade           | O sistema deve classificar cada precedente encontrado como "Aplicável", "Possivelmente aplicável" ou "Não aplicável".                                          |
-| RF08 | Exibição de dados estruturados            | O sistema deve apresentar informações estruturadas de cada precedente, incluindo tribunal de origem, tema, enunciado, status e tese firmada quando disponível. |
-| RF09 | Síntese explicativa                       | O sistema deve gerar uma explicação resumida que indique a relação entre o precedente identificado e o caso analisado.                                         |
-| RF10 | Ordenação dos resultados                  | O sistema deve apresentar os precedentes encontrados organizados por grau de similaridade ou relevância.                                                       |
-| RF11 | Acesso via aplicativo móvel               | O sistema deve permitir que o usuário acesse as funcionalidades por meio de um aplicativo móvel conectado à nuvem.                                             |
+### Requisitos Funcionais
 
+| RF | Nome | Descritivo |
+|----|------|------------|
+| RF1 | Upload de petição inicial | O sistema deve permitir que o usuário envie uma petição inicial em formato PDF para análise automática. |
+| RF2 | Processamento do texto | O sistema deve analisar automaticamente o conteúdo textual da petição para identificar as informações jurídicas relevantes. |
+| RF3 | Consulta à base de precedentes | O sistema deve consultar automaticamente a base própria de precedentes jurídicos já indexada para identificar decisões relacionadas ao caso analisado. |
+| RF4 | Identificação de precedentes relacionados | O sistema deve identificar os precedentes mais relacionados ao caso com base no conteúdo da petição enviada. |
+| RF5 | Classificação de aplicabilidade | O sistema deve calcular a similaridade entre a petição e cada precedente encontrado e classificá-los como "Aplicável", "Possivelmente aplicável" ou "Não aplicável". |
+| RF6 | Exibição de dados estruturados | O sistema deve apresentar as informações de cada precedente, incluindo tribunal de origem, tema, enunciado, status e tese firmada quando disponível. |
+| RF7 | Síntese explicativa | O sistema deve gerar uma explicação resumida que indique a relação entre o precedente identificado e o caso analisado. |
+| RF8 | Geração de resumo | O sistema deve gerar um resumo automático da petição destacando as principais informações do caso. |
 
 ### Requisitos Não Funcionais
 
-| RNF   | Nome                          | Descritivo                                                                                                                     |
-| ----- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| RNF01 | Tempo de resposta             | O sistema deve apresentar o resultado da análise da petição em até 10 segundos após o envio do documento.                      |
-| RNF02 | Desempenho de busca           | A consulta de precedentes na base de dados deve ocorrer em tempo inferior a 5 segundos.                                        |
-| RNF03 | Escalabilidade                | O sistema deve suportar múltiplos usuários realizando consultas simultâneas sem perda significativa de desempenho.             |
-| RNF04 | Disponibilidade               | O sistema deve possuir disponibilidade mínima de 99% para garantir acesso contínuo.                                            |
-| RNF05 | Infraestrutura em nuvem       | A aplicação deve ser hospedada em ambiente de computação em nuvem para garantir escalabilidade e alta disponibilidade.         |
-| RNF06 | Segurança dos dados           | O sistema deve garantir a confidencialidade e proteção das petições enviadas pelos usuários.                                   |
-| RNF07 | Comunicação segura            | Toda comunicação entre o aplicativo e o servidor deve utilizar protocolo seguro HTTPS.                                         |
-| RNF08 | Autenticação de usuários      | O sistema deve exigir autenticação para acesso às funcionalidades da aplicação.                                                |
-| RNF09 | Usabilidade                   | A interface do aplicativo deve ser simples e intuitiva, facilitando a utilização por profissionais do Direito.                 |
-| RNF10 | Compatibilidade               | O sistema deve ser compatível com dispositivos móveis Android e iOS.                                                           |
-| RNF11 | Suporte a formatos de arquivo | O sistema deve aceitar arquivos de petições nos formatos PDF, DOCX e TXT.                                                      |
-| RNF12 | Arquitetura modular           | O sistema deve possuir arquitetura modular para facilitar manutenção e evolução da aplicação.                                  |
-| RNF13 | Atualização do modelo de IA   | O sistema deve permitir atualização do modelo de aprendizado de máquina sem necessidade de reconstrução completa da aplicação. |
-| RNF14 | Tratamento de erros           | O sistema deve identificar e tratar erros de processamento ou consulta, informando o usuário de forma clara.                   |
+| RNF | Nome | Descritivo |
+|-----|------|------------|
+| RNF1 | Manual de Instalação | Documentação de instalação disponível no repositório do projeto. |
+| RNF2 | Manual do Usuário | Documentação orientada ao usuário final explicando como utilizar as funcionalidades do sistema. |
+| RNF3 | Documentação de APIs | Elaboração detalhada da documentação para todas as rotas da API, incluindo exemplos de uso. |
+| RNF4 | Integração Contínua (CI) | Implementação de um processo automático de testes e validações a cada atualização do sistema. |
+| RNF5 | Ambiente de Execução | A aplicação deve ser empacotada com Docker e disponibilizada via Swarm para facilitar a execução e a publicação do sistema. |
 
 ---
 
 ## 📜 Product Backlog <a name="backlog"></a>
 
+| RANK | SPRINT | PRIORIDADE | ESTIMATIVA | USER STORY | RF |
+|:----:|:------:|:----------:|:----------:|------------|----|
+| 1 | 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 |
+| 2 | 1 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 |
+| 3 | 1 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 |
+| 4 | 1 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente encontrado, para que eu saiba quais merecem atenção prioritária. | RF5 |
+| 5 | 1 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado, status e tese firmada —, para que eu avalie sua aplicabilidade com precisão. | RF6 |
+| 6 | 1 | Alta | 3 | Como juiz, quero acompanhar o andamento da análise da petição em tempo real, para que eu saiba quando os resultados estarão disponíveis. | RF2 |
+| 7 | 2 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 |
+| 8 | 2 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 |
+| 9 | 2 | Média | 5 | Como juiz, quero criar uma conta e fazer login no aplicativo, para que eu acesse minhas análises de forma segura e personalizada. | — |
+| 10 | 2 | Média | 3 | Como juiz, quero que a interface do aplicativo seja clara e intuitiva, para que eu navegue entre petições e precedentes sem dificuldade. | — |
+| 11 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — |
+| 12 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — |
+
 ---
 
 ## 📝 Sprint Backlog <a name="backsprint"></a>
+
+### Sprint 1 — Upload, Processamento e Comparação de Precedentes
+
+> **Período:** 16/03/2026 à 05/04/2026  
+> **Foco:** Estrutura base do sistema — o juiz envia a petição, o sistema identifica informações jurídicas relevantes, consulta a base de precedentes e retorna os resultados com classificação de aplicabilidade.
+
+| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
+|:----:|:----------:|:----------:|------------|----|:------:|
+| 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | 🔲 |
+| 2 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | 🔲 |
+| 3 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | 🔲 |
+| 4 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente encontrado, para que eu saiba quais merecem atenção prioritária. | RF5 | 🔲 |
+| 5 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado, status e tese firmada —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
+| 6 | Alta | 3 | Como juiz, quero acompanhar o andamento da análise da petição em tempo real, para que eu saiba quando os resultados estarão disponíveis. | RF2 | 🔲 |
+
+---
+
+### Sprint 2 — Resumo, Síntese Explicativa, Login e UX
+
+> **Período:** 13/04/2026 à 03/05/2026  
+> **Foco:** Geração automática de resumo da petição e síntese explicativa por precedente, adição de autenticação e melhorias de interface.
+
+| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
+|:----:|:----------:|:----------:|------------|----|:------:|
+| 7 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
+| 8 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
+| 9 | Média | 5 | Como juiz, quero criar uma conta e fazer login no aplicativo, para que eu acesse minhas análises de forma segura e personalizada. | — | 🔲 |
+| 10 | Média | 3 | Como juiz, quero que a interface do aplicativo seja clara e intuitiva, para que eu navegue entre petições e precedentes sem dificuldade. | — | 🔲 |
+
+---
+
+### Sprint 3 — Histórico e Exportação
+
+> **Período:** 11/05/2026 à 31/05/2026  
+> **Foco:** Completar a experiência do usuário com histórico de análises e exportação de relatórios.
+
+| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
+|:----:|:----------:|:----------:|------------|----|:------:|
+| 11 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
+| 12 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
 
 ---
 
 ## Links Úteis <a name="links"></a>
 
+- [Base de Precedentes Pangea](https://pangeabnp.pdpj.jus.br/)
+- [O que é um precedente jurídico?](https://www.jusbrasil.com.br/artigos/afinal-o-que-e-um-precedente/1889550599)
+
 ---
 
-## 👥 Equipe <a name="equipe"><a>
-|  Foto        |     Função    |           Nome            |                            LinkedIn                            |                      GitHub                       |
-| :----: | :-----------: | :-----------------------: | :------------------------------------------------------------: | :-----------------------------------------------: |
-| <img src="https://avatars.githubusercontent.com/u/160733714?v=4" width="75px"> | Product Owner  | Eduardo da Silva Fontes | [Linkedin](https://www.linkedin.com/in/eduardo-da-silva-fontes/)  | [GitHub](https://github.com/DuuhZero)           |
-| <img src="https://avatars.githubusercontent.com/u/162118889?v=4" width="75px"> | Dev Team | Eduardo Kuwahara Jr. |  [Linkedin](https://www.linkedin.com/in/eduardo-kuwahara-3b2267303/)  | [GitHub](https://github.com/EduardoKuwahara) |
-| <img src="https://avatars.githubusercontent.com/u/161594793?v=4" width="75px"> | Dev Team      | Eric Kawata |  [Linkedin](https://www.linkedin.com/in/eric-kawata-99678b302/)  | [GitHub](https://github.com/ericFatec)    |
-| <img src="https://avatars.githubusercontent.com/u/144804717?v=4" width="75px"> | Dev Team      | Fábio Hiroshi |  [Linkedin](https://www.linkedin.com/in/f%C3%A1bio-hiroshi-5393a51a0)  | [GitHub](https://github.com/FabioHiros)    |
-| <img src="https://avatars.githubusercontent.com/u/119539664?v=4" width="75px">|Dev Team| João Pedro França Alves de Souza |  [Linkedin](https://www.linkedin.com/in/joão-pedro-frança-alves-de-souza-8700a62b3/)  | [GitHub](https://github.com/jofran2001)  |
-| <img src="https://avatars.githubusercontent.com/u/162117916?v=4" width="75px"> | Dev Team  | João Vitor Rossi Ferreira |  [Linkedin](https://www.linkedin.com/in/joão-rossi-7311a0301/)  | [GitHub](https://github.com/joaorossiferreira)    |
-| <img src="https://avatars.githubusercontent.com/u/95691713?v=4" width="75px"> | Dev Team      | Kathellyn Caroline Alves dos Santos |  [Linkedin](https://www.linkedin.com/in/kathellyn-caroline-a562101b9)  | [GitHub](https://github.com/CarolineKathellyn)    |
-| <img src="https://avatars.githubusercontent.com/u/162117908?v=4" width="75px"> | Scrum Master      | Paulo Henrique Martins de Almeida |  [Linkedin](https://www.linkedin.com/in/paulo-almeida-3102452a7/)  | [GitHub](https://github.com/pauloalmeida46)    |
-| <img src="https://avatars.githubusercontent.com/u/161987258?v=4" width="
+## 👥 Equipe <a name="equipe"></a>
+
+| Foto | Função | Nome | LinkedIn | GitHub |
+|:----:|:------:|:----:|:--------:|:------:|
+| <img src="https://avatars.githubusercontent.com/u/160733714?v=4" width="75px"> | Product Owner | Eduardo da Silva Fontes | [LinkedIn](https://www.linkedin.com/in/eduardo-da-silva-fontes/) | [GitHub](https://github.com/DuuhZero) |
+| <img src="https://avatars.githubusercontent.com/u/162118889?v=4" width="75px"> | Dev Team | Eduardo Kuwahara Jr. | [LinkedIn](https://www.linkedin.com/in/eduardo-kuwahara-3b2267303/) | [GitHub](https://github.com/EduardoKuwahara) |
+| <img src="https://avatars.githubusercontent.com/u/161594793?v=4" width="75px"> | Dev Team | Eric Kawata | [LinkedIn](https://www.linkedin.com/in/eric-kawata-99678b302/) | [GitHub](https://github.com/ericFatec) |
+| <img src="https://avatars.githubusercontent.com/u/144804717?v=4" width="75px"> | Dev Team | Fábio Hiroshi | [LinkedIn](https://www.linkedin.com/in/f%C3%A1bio-hiroshi-5393a51a0) | [GitHub](https://github.com/FabioHiros) |
+| <img src="https://avatars.githubusercontent.com/u/119539664?v=4" width="75px"> | Dev Team | João Pedro França Alves de Souza | [LinkedIn](https://www.linkedin.com/in/joão-pedro-frança-alves-de-souza-8700a62b3/) | [GitHub](https://github.com/jofran2001) |
+| <img src="https://avatars.githubusercontent.com/u/162117916?v=4" width="75px"> | Dev Team | João Vitor Rossi Ferreira | [LinkedIn](https://www.linkedin.com/in/joão-rossi-7311a0301/) | [GitHub](https://github.com/joaorossiferreira) |
+| <img src="https://avatars.githubusercontent.com/u/95691713?v=4" width="75px"> | Dev Team | Kathellyn Caroline Alves dos Santos | [LinkedIn](https://www.linkedin.com/in/kathellyn-caroline-a562101b9) | [GitHub](https://github.com/CarolineKathellyn) |
+| <img src="https://avatars.githubusercontent.com/u/162117908?v=4" width="75px"> | Scrum Master | Paulo Henrique Martins de Almeida | [LinkedIn](https://www.linkedin.com/in/paulo-almeida-3102452a7/) | [GitHub](https://github.com/pauloalmeida46) |
