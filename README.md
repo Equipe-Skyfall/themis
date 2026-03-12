@@ -161,7 +161,6 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 ---
 
 ## 📜 Product Backlog <a name="backlog"></a>
-
 | RANK | SPRINT | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:------:|:----------:|:----------:|------------|----|:------:|
 | 1 | 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | 🔲 |
@@ -177,7 +176,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | 13 | 2 | Média | 5 | Como juiz, quero que a síntese explicativa de cada precedente seja apresentada em linguagem clara e objetiva, para que eu avalie a relevância sem precisar interpretar o texto bruto da decisão. | RF7 | 🔲 |
 | 14 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
 | 15 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
-
+ 
 ---
 
 ## 📝 Sprint Backlog <a name="backsprint"></a>
