@@ -146,7 +146,8 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | RF5 | Classificação de aplicabilidade | O sistema deve calcular a similaridade entre a petição e cada precedente encontrado e classificá-los como "Aplicável", "Possivelmente aplicável" ou "Não aplicável". |
 | RF6 | Exibição de dados estruturados | O sistema deve apresentar as informações de cada precedente, incluindo tribunal de origem, tema, enunciado, status e tese firmada quando disponível. |
 | RF7 | Síntese explicativa | O sistema deve gerar uma explicação resumida que indique a relação entre o precedente identificado e o caso analisado. |
-| RF8 | Geração de resumo | O sistema deve gerar um resumo automático da petição destacando as principais informações do caso. |
+| RF8 | Geração de resumo | O sistema deve gerar um resumo automático da petição e apresentá-lo na tela de resultados, destacando as principais informações do caso. |
+ 
 
 ### Requisitos Não Funcionais
 
