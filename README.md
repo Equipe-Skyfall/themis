@@ -4,7 +4,7 @@
 
 > _A API se trata de um projeto submetido à metodologia de ensino em implantação na Fatec São José dos Campos, do qual os alunos formam equipes baseadas na metodologia ágil SCRUM, tendo um aluno como Scrum Master, um sendo o Product Owner e o restante dos integrantes como Dev Team._
 
-<img src="https://github.com/Equipe-Skyfall/themis/blob/main/docs/bannerthemis.jpg">
+<img src="https://github.com/Equipe-Skyfall/themis/blob/main/docs/c1953f4d-96e9-4539-a7be-647771145366.jpg">
 
 ---
 
