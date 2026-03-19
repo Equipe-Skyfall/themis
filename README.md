@@ -305,20 +305,20 @@ Uma User Story é considerada concluída quando:
 **RF:** RF3, RF4 | **Prioridade:** Alta | **Estimativa:** 8 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critérios de aceitação definidos (número mínimo de precedentes retornados, campos exibidos na listagem)
-- [ ] Acesso e estrutura da base de precedentes (Pangea) mapeados
-- [ ] Mockup da tela de resultados disponível
-- [ ] História estimada (8 pts)
-- [ ] Dependência com US02 identificada
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo da tela de resultados validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Lista de precedentes exibida com base no conteúdo da petição
-- [ ] Integração com a base de precedentes funcionando
-- [ ] Resultados ordenados por relevância
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado manualmente com ao menos 2 petições diferentes
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 ---
 
@@ -329,19 +329,20 @@ Uma User Story é considerada concluída quando:
 **RF:** RF5 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critérios de classificação definidos (limiares para cada categoria)
-- [ ] Mockup com representação visual das categorias disponível
-- [ ] História estimada (5 pts)
-- [ ] Dependência com US03 identificada
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo com representação visual das categorias validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Classificação (Aplicável / Possivelmente aplicável / Não aplicável) exibida para cada precedente
-- [ ] Lógica de categorização implementada conforme limiares definidos
-- [ ] Diferenciação visual clara entre as categorias
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado manualmente e validado com o time
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 </details>
 
@@ -364,18 +365,20 @@ Uma User Story é considerada concluída quando:
 **RF:** RF5 | **Prioridade:** Alta | **Estimativa:** 3 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critérios de aceitação definidos (formato de exibição, casa decimal, escala 0–100%)
-- [ ] Algoritmo de cálculo de similaridade definido e validado
-- [ ] História estimada (3 pts)
-- [ ] Dependência com Sprint 1 identificada
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (3 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo validado pelo cliente (quando aplicável)
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Percentual de similaridade calculado e exibido para cada precedente
-- [ ] Valor coerente com o conteúdo da petição
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado manualmente com ao menos 2 petições
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 ---
 
@@ -386,18 +389,20 @@ Uma User Story é considerada concluída quando:
 **RF:** RF6 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Campos obrigatórios definidos (tribunal, tema, enunciado, status)
-- [ ] Mockup da tela de detalhe do precedente disponível
-- [ ] História estimada (5 pts)
-- [ ] Disponibilidade dos campos na base de precedentes confirmada
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo da tela de detalhe do precedente validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Todos os campos definidos exibidos corretamente para cada precedente
-- [ ] Campos ausentes tratados de forma adequada (ex.: "Não disponível")
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado manualmente com precedentes com e sem dados completos
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 ---
 
@@ -408,17 +413,20 @@ Uma User Story é considerada concluída quando:
 **RF:** RF6 | **Prioridade:** Alta | **Estimativa:** 3 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critério de disponibilidade definido (campo nulo vs. preenchido)
-- [ ] História estimada (3 pts)
-- [ ] Dependência com US06 identificada
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (3 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo validado pelo cliente (quando aplicável)
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Tese firmada exibida quando presente na base de dados
-- [ ] Campo omitido ou sinalizado como indisponível quando ausente
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado com precedentes com e sem tese firmada
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 ---
 
@@ -429,19 +437,20 @@ Uma User Story é considerada concluída quando:
 **RF:** RF8 | **Prioridade:** Média | **Estimativa:** 8 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critérios de qualidade do resumo definidos (tamanho máximo, informações obrigatórias)
-- [ ] Abordagem de geração de resumo (modelo de linguagem / sumarização) discutida pelo time
-- [ ] Mockup da seção de resumo na tela de resultados disponível
-- [ ] História estimada (8 pts)
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo da seção de resumo na tela de resultados validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Resumo gerado automaticamente a partir do conteúdo da petição
-- [ ] Resumo exibido na tela de resultados com destaque visual
-- [ ] Resumo coerente e objetivo validado pelo time
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado com ao menos 3 petições de diferentes áreas jurídicas
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 </details>
 
@@ -464,19 +473,20 @@ Uma User Story é considerada concluída quando:
 **RF:** RF7 | **Prioridade:** Média | **Estimativa:** 8 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critérios de qualidade da síntese definidos (clareza, tamanho, vínculo com a petição)
-- [ ] Abordagem de geração da síntese explicativa discutida pelo time
-- [ ] Mockup da exibição da síntese por precedente disponível
-- [ ] História estimada (8 pts)
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo da exibição da síntese por precedente validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Síntese explicativa gerada e exibida individualmente para cada precedente
-- [ ] Explicação contextualizada ao conteúdo da petição enviada
-- [ ] Conteúdo validado pelo time como coerente e útil
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado com ao menos 2 petições
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 ---
 
@@ -487,19 +497,20 @@ Uma User Story é considerada concluída quando:
 **RF:** — | **Prioridade:** Baixa | **Estimativa:** 5 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critérios de aceitação definidos (campos exibidos no histórico, ordenação, paginação)
-- [ ] Modelo de dados para armazenamento do histórico definido
-- [ ] Mockup da tela de histórico disponível
-- [ ] História estimada (5 pts)
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo da tela de histórico validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] Histórico de petições listado corretamente por usuário
-- [ ] Navegação até os resultados de uma análise anterior funcionando
-- [ ] Dados persistidos corretamente entre sessões
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado manualmente com múltiplas análises realizadas
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 ---
 
@@ -510,19 +521,20 @@ Uma User Story é considerada concluída quando:
 **RF:** — | **Prioridade:** Baixa | **Estimativa:** 5 | **Status:** 🔲
 
 **Definition of Ready (DoR)**
-- [ ] User story escrita e compreendida pelo time
-- [ ] Critérios de aceitação definidos (conteúdo obrigatório no PDF, layout, nome do arquivo)
-- [ ] Biblioteca de geração de PDF definida e validada
-- [ ] Mockup do relatório PDF disponível
-- [ ] História estimada (5 pts)
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo do relatório PDF validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
 
 **Definition of Done (DoD)**
-- [ ] PDF gerado com todas as informações do relatório (resumo, precedentes, classificações)
-- [ ] Download do arquivo funcionando no aplicativo
-- [ ] Formatação do PDF validada pelo time
-- [ ] PR revisado e aprovado
-- [ ] CI passando
-- [ ] Testado em diferentes dispositivos
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 </details>
 
