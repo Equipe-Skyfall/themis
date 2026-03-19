@@ -92,6 +92,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"> | API REST para comunicação entre o app e o backend |
 | <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"> | Banco de dados para armazenamento de petições, precedentes e histórico |
 | <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"> | Design de interfaces e prototipação dos wireframes |
+| <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"> | Empacotamento e orquestração da aplicação via containers (Docker Swarm) |
 
 ---
 
