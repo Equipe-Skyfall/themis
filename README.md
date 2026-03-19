@@ -212,7 +212,6 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 - [ ] **Critérios de aceitação validados:** Todos os critérios de aceitação foram atendidos e verificados com testes apropriados.
 - [ ] **Execução de testes adequados:** Testes unitários, de integração e de aceitação foram realizados para garantir a estabilidade e funcionamento correto da aplicação.
-- [ ] **Código-fonte completo e padronizado:** O código está 100% implementado, refatorado e segue as boas práticas e padrões de qualidade definidos.
 - [ ] **Commits organizados e documentados:** Os commits seguem a nomenclatura acordada, são claros, segmentados e possuem histórico bem documentado.
 - [ ] **Guia de instalação detalhado:** A documentação de instalação é clara e completa, permitindo que qualquer usuário ou desenvolvedor configure e execute a aplicação sem dificuldades.
 - [ ] **Manual do usuário disponível:** Um manual foi criado para orientar o cliente sobre o funcionamento da aplicação.
