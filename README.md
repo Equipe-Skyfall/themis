@@ -22,6 +22,10 @@
 - [Tecnologias utilizadas](#tecnologias)
 - [Padrões de Commit](#padrao)
 - [Requisitos](#requisitos)
+- [Arquitetura](#arquitetura)
+- [Wireframes](#wireframes)
+- [Definition of Ready (DoR)](#dor)
+- [Definition of Done (DoD)](#dod)
 - [Product Backlog](#backlog)
 - [Sprint Backlog](#backsprint)
 - [Links úteis](#links)
@@ -81,7 +85,13 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 ## 💻 Tecnologias utilizadas <a name="tecnologias"></a>
 
-> _A ser preenchido pelo time._
+| Tecnologia | Finalidade |
+|:----------:|------------|
+| <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"> | Desenvolvimento do aplicativo mobile (iOS e Android) |
+| <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"> | Processamento de linguagem natural e lógica de análise jurídica |
+| <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"> | API REST para comunicação entre o app e o backend |
+| <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"> | Banco de dados para armazenamento de petições, precedentes e histórico |
+| <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"> | Design de interfaces e prototipação dos wireframes |
 
 ---
 
@@ -160,6 +170,56 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | RNF5 | Ambiente de Execução | A aplicação deve ser empacotada com Docker e disponibilizada via Swarm para facilitar a execução e a publicação do sistema. |
 
 ---
+
+## 🏗 Arquitetura <a name="arquitetura"></a>
+
+<img src="docs/themis_architecture.png" alt="Arquitetura do sistema Themis" width="800">
+
+---
+
+## 🖥 Wireframes <a name="wireframes"></a>
+
+<table>
+  <tr>
+    <td align="center" valign="top"><strong>Página Principal</strong><br><img src="docs/Página Principal.png" alt="Wireframe - Página Principal" width="280"></td>
+    <td align="center" valign="top"><strong>Cadastro</strong><br><img src="docs/Cadastro.png" alt="Wireframe - Cadastro" width="280"></td>
+    <td align="center" valign="top"><strong>Nova Análise</strong><br><img src="docs/Nova Análise.png" alt="Wireframe - Nova Análise" width="280"></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><strong>Resultados</strong><br><img src="docs/Resultados.png" alt="Wireframe - Resultados" width="280"></td>
+    <td align="center" valign="top"><strong>Resultado (Modal)</strong><br><img src="docs/Resultado (Modal).png" alt="Wireframe - Resultado (Modal)" width="280"></td>
+    <td align="center" valign="top"><strong>Página do Usuário</strong><br><img src="docs/Página do Usuário.png" alt="Wireframe - Página do Usuário" width="280"></td>
+  </tr>
+</table>
+
+---
+
+## ✅ Definition of Ready (DoR) <a name="dor"></a>
+
+Uma User Story está pronta para entrar em uma Sprint quando:
+
+- [ ] A User Story está escrita no formato acordado ("Como... quero... para que...")
+- [ ] Os critérios de aceitação estão claramente definidos
+- [ ] A história foi estimada em story points pelo time
+- [ ] As dependências foram identificadas
+- [ ] Wireframes/mockups estão disponíveis (quando aplicável)
+- [ ] O time compreende a abordagem técnica necessária
+
+---
+
+## ✅ Definition of Done (DoD) <a name="dod"></a>
+
+Uma User Story é considerada concluída quando:
+
+- [ ] A funcionalidade foi implementada conforme os critérios de aceitação
+- [ ] O código foi revisado via Pull Request e aprovado
+- [ ] O código foi mergeado na branch `dev`
+- [ ] O pipeline de CI está passando
+- [ ] Testes manuais foram realizados e validados
+- [ ] Nenhum bug crítico foi introduzido
+- [ ] A documentação foi atualizada, se aplicável (docs de API, README)
+
+---
 ## 📜 Product Backlog <a name="backlog"></a>
 
 | RANK | SPRINT | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
@@ -180,46 +240,291 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 ## 📝 Sprint Backlog <a name="backsprint"></a>
 
-### Sprint 1 — Upload, Processamento e Comparação de Precedentes
+<details>
+<summary><strong>Sprint 1 — Upload, Processamento e Comparação de Precedentes</strong></summary>
+
+<br>
 
 > **Período:** 16/03/2026 à 05/04/2026
 > **Foco:** Estrutura base do sistema — o juiz envia a petição, o sistema identifica informações jurídicas relevantes, consulta a base de precedentes e retorna os resultados com classificação de aplicabilidade.
 
-| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
-|:----:|:----------:|:----------:|------------|----|:------:|
-| 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | 🔲 |
-| 2 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | 🔲 |
-| 3 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | 🔲 |
-| 4 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | 🔲 |
+---
 
+#### US01 — Envio de petição inicial em PDF
+
+**User Story:** Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente.
+
+**RF:** RF1 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo da tela de upload validado pelo cliente
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
+
+**Definition of Done (DoD)**
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
 
 ---
 
-### Sprint 2 — Resumo e Síntese Explicativa
+#### US02 — Identificação automática de informações jurídicas
+
+**User Story:** Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos.
+
+**RF:** RF2 | **Prioridade:** Alta | **Estimativa:** 8 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
+- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
+- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
+- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
+- [ ] Wireframe/Mockup aprovado: protótipo validado pelo cliente (quando aplicável)
+- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
+- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
+
+**Definition of Done (DoD)**
+- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
+- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
+- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
+- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
+- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+
+---
+
+#### US03 — Visualização de lista de precedentes relacionados
+
+**User Story:** Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas.
+
+**RF:** RF3, RF4 | **Prioridade:** Alta | **Estimativa:** 8 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critérios de aceitação definidos (número mínimo de precedentes retornados, campos exibidos na listagem)
+- [ ] Acesso e estrutura da base de precedentes (Pangea) mapeados
+- [ ] Mockup da tela de resultados disponível
+- [ ] História estimada (8 pts)
+- [ ] Dependência com US02 identificada
+
+**Definition of Done (DoD)**
+- [ ] Lista de precedentes exibida com base no conteúdo da petição
+- [ ] Integração com a base de precedentes funcionando
+- [ ] Resultados ordenados por relevância
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado manualmente com ao menos 2 petições diferentes
+
+---
+
+#### US04 — Classificação de aplicabilidade dos precedentes
+
+**User Story:** Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária.
+
+**RF:** RF5 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critérios de classificação definidos (limiares para cada categoria)
+- [ ] Mockup com representação visual das categorias disponível
+- [ ] História estimada (5 pts)
+- [ ] Dependência com US03 identificada
+
+**Definition of Done (DoD)**
+- [ ] Classificação (Aplicável / Possivelmente aplicável / Não aplicável) exibida para cada precedente
+- [ ] Lógica de categorização implementada conforme limiares definidos
+- [ ] Diferenciação visual clara entre as categorias
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado manualmente e validado com o time
+
+</details>
+
+---
+
+<details>
+<summary><strong>Sprint 2 — Resumo e Síntese Explicativa</strong></summary>
+
+<br>
 
 > **Período:** 13/04/2026 à 03/05/2026
 > **Foco:** Geração automática de resumo da petição e síntese explicativa por precedente.
 
-| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
-|:----:|:----------:|:----------:|------------|----|:------:|
-| 5 | Alta | 3 | Como juiz, quero ver o percentual de similaridade de cada precedente em relação ao caso, para que eu compreenda o grau de proximidade entre as decisões. | RF5 | 🔲 |
-| 6 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
-| 7 | Alta | 3 | Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema. | RF6 | 🔲 |
-| 8 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
+---
 
+#### US05 — Percentual de similaridade por precedente
+
+**User Story:** Como juiz, quero ver o percentual de similaridade de cada precedente em relação ao caso, para que eu compreenda o grau de proximidade entre as decisões.
+
+**RF:** RF5 | **Prioridade:** Alta | **Estimativa:** 3 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critérios de aceitação definidos (formato de exibição, casa decimal, escala 0–100%)
+- [ ] Algoritmo de cálculo de similaridade definido e validado
+- [ ] História estimada (3 pts)
+- [ ] Dependência com Sprint 1 identificada
+
+**Definition of Done (DoD)**
+- [ ] Percentual de similaridade calculado e exibido para cada precedente
+- [ ] Valor coerente com o conteúdo da petição
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado manualmente com ao menos 2 petições
 
 ---
 
-### Sprint 3 — Histórico e Exportação
+#### US06 — Informações detalhadas do precedente
+
+**User Story:** Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão.
+
+**RF:** RF6 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Campos obrigatórios definidos (tribunal, tema, enunciado, status)
+- [ ] Mockup da tela de detalhe do precedente disponível
+- [ ] História estimada (5 pts)
+- [ ] Disponibilidade dos campos na base de precedentes confirmada
+
+**Definition of Done (DoD)**
+- [ ] Todos os campos definidos exibidos corretamente para cada precedente
+- [ ] Campos ausentes tratados de forma adequada (ex.: "Não disponível")
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado manualmente com precedentes com e sem dados completos
+
+---
+
+#### US07 — Exibição da tese firmada quando disponível
+
+**User Story:** Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema.
+
+**RF:** RF6 | **Prioridade:** Alta | **Estimativa:** 3 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critério de disponibilidade definido (campo nulo vs. preenchido)
+- [ ] História estimada (3 pts)
+- [ ] Dependência com US06 identificada
+
+**Definition of Done (DoD)**
+- [ ] Tese firmada exibida quando presente na base de dados
+- [ ] Campo omitido ou sinalizado como indisponível quando ausente
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado com precedentes com e sem tese firmada
+
+---
+
+#### US08 — Resumo automático da petição
+
+**User Story:** Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo.
+
+**RF:** RF8 | **Prioridade:** Média | **Estimativa:** 8 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critérios de qualidade do resumo definidos (tamanho máximo, informações obrigatórias)
+- [ ] Abordagem de geração de resumo (modelo de linguagem / sumarização) discutida pelo time
+- [ ] Mockup da seção de resumo na tela de resultados disponível
+- [ ] História estimada (8 pts)
+
+**Definition of Done (DoD)**
+- [ ] Resumo gerado automaticamente a partir do conteúdo da petição
+- [ ] Resumo exibido na tela de resultados com destaque visual
+- [ ] Resumo coerente e objetivo validado pelo time
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado com ao menos 3 petições de diferentes áreas jurídicas
+
+</details>
+
+---
+
+<details>
+<summary><strong>Sprint 3 — Histórico e Exportação</strong></summary>
+
+<br>
 
 > **Período:** 11/05/2026 à 31/05/2026
 > **Foco:** Completar a experiência do usuário com histórico de análises e exportação de relatórios.
 
-| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
-|:----:|:----------:|:----------:|------------|----|:------:|
-| 9 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
-| 10 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
-| 11 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
+---
+
+#### US09 — Síntese explicativa por precedente
+
+**User Story:** Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional.
+
+**RF:** RF7 | **Prioridade:** Média | **Estimativa:** 8 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critérios de qualidade da síntese definidos (clareza, tamanho, vínculo com a petição)
+- [ ] Abordagem de geração da síntese explicativa discutida pelo time
+- [ ] Mockup da exibição da síntese por precedente disponível
+- [ ] História estimada (8 pts)
+
+**Definition of Done (DoD)**
+- [ ] Síntese explicativa gerada e exibida individualmente para cada precedente
+- [ ] Explicação contextualizada ao conteúdo da petição enviada
+- [ ] Conteúdo validado pelo time como coerente e útil
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado com ao menos 2 petições
+
+---
+
+#### US10 — Histórico de petições analisadas
+
+**User Story:** Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente.
+
+**RF:** — | **Prioridade:** Baixa | **Estimativa:** 5 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critérios de aceitação definidos (campos exibidos no histórico, ordenação, paginação)
+- [ ] Modelo de dados para armazenamento do histórico definido
+- [ ] Mockup da tela de histórico disponível
+- [ ] História estimada (5 pts)
+
+**Definition of Done (DoD)**
+- [ ] Histórico de petições listado corretamente por usuário
+- [ ] Navegação até os resultados de uma análise anterior funcionando
+- [ ] Dados persistidos corretamente entre sessões
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado manualmente com múltiplas análises realizadas
+
+---
+
+#### US11 — Exportação do relatório em PDF
+
+**User Story:** Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo.
+
+**RF:** — | **Prioridade:** Baixa | **Estimativa:** 5 | **Status:** 🔲
+
+**Definition of Ready (DoR)**
+- [ ] User story escrita e compreendida pelo time
+- [ ] Critérios de aceitação definidos (conteúdo obrigatório no PDF, layout, nome do arquivo)
+- [ ] Biblioteca de geração de PDF definida e validada
+- [ ] Mockup do relatório PDF disponível
+- [ ] História estimada (5 pts)
+
+**Definition of Done (DoD)**
+- [ ] PDF gerado com todas as informações do relatório (resumo, precedentes, classificações)
+- [ ] Download do arquivo funcionando no aplicativo
+- [ ] Formatação do PDF validada pelo time
+- [ ] PR revisado e aprovado
+- [ ] CI passando
+- [ ] Testado em diferentes dispositivos
+
+</details>
 
 ---
 ## Links Úteis <a name="links"></a>
