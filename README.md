@@ -4,7 +4,7 @@
 
 > _A API se trata de um projeto submetido à metodologia de ensino em implantação na Fatec São José dos Campos, do qual os alunos formam equipes baseadas na metodologia ágil SCRUM, tendo um aluno como Scrum Master, um sendo o Product Owner e o restante dos integrantes como Dev Team._
 
-<img src="https://github.com/Equipe-Skyfall/themis/blob/main/docs/c1953f4d-96e9-4539-a7be-647771145366.jpg">
+<img src="https://raw.githubusercontent.com/Equipe-Skyfall/themis/main/docs/themisbanner.jpg">
 
 ---
 
@@ -197,28 +197,25 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 ## ✅ Definition of Ready (DoR) <a name="dor"></a>
 
-Uma User Story está pronta para entrar em uma Sprint quando:
-
-- [ ] A User Story está escrita no formato acordado ("Como... quero... para que...")
-- [ ] Os critérios de aceitação estão claramente definidos
-- [ ] A história foi estimada em story points pelo time
-- [ ] As dependências foram identificadas
-- [ ] Wireframes/mockups estão disponíveis (quando aplicável)
-- [ ] O time compreende a abordagem técnica necessária
+- [ ] **User Stories completas:** Todos os requisitos descritos em User Stories planejadas para caber na sprint.
+- [ ] **Tarefas detalhadas e atribuídas:** Cada User Story deve ter ao menos uma task detalhada e atribuída a um responsável.
+- [ ] **Critérios de aceitação definidos:** Cada User Story deve ter critérios de aceitação bem estabelecidos.
+- [ ] **Estimativas definidas:** Todas as User Stories devem ter uma estimativa de esforço/tamanho feita pelo time.
+- [ ] **Wireframe/Mockup aprovados:** O cliente deve ter validado e aprovado os protótipos visuais.
+- [ ] **Modelo de dados finalizado:** Estrutura de dados completamente definida e documentada.
+- [ ] **Testes de aceitação definidos:** Incluindo testes sugeridos pelo cliente e testes de aceitação.
+- [ ] **Ambiente de desenvolvimento pronto:** O time deve ter acesso a todos os ambientes, ferramentas e permissões necessárias.
 
 ---
 
 ## ✅ Definition of Done (DoD) <a name="dod"></a>
 
-Uma User Story é considerada concluída quando:
-
-- [ ] A funcionalidade foi implementada conforme os critérios de aceitação
-- [ ] O código foi revisado via Pull Request e aprovado
-- [ ] O código foi mergeado na branch `dev`
-- [ ] O pipeline de CI está passando
-- [ ] Testes manuais foram realizados e validados
-- [ ] Nenhum bug crítico foi introduzido
-- [ ] A documentação foi atualizada, se aplicável (docs de API, README)
+- [ ] **Critérios de aceitação validados:** Todos os critérios de aceitação foram atendidos e verificados com testes apropriados.
+- [ ] **Execução de testes adequados:** Testes unitários, de integração e de aceitação foram realizados para garantir a estabilidade e funcionamento correto da aplicação.
+- [ ] **Código-fonte completo e padronizado:** O código está 100% implementado, refatorado e segue as boas práticas e padrões de qualidade definidos.
+- [ ] **Commits organizados e documentados:** Os commits seguem a nomenclatura acordada, são claros, segmentados e possuem histórico bem documentado.
+- [ ] **Guia de instalação detalhado:** A documentação de instalação é clara e completa, permitindo que qualquer usuário ou desenvolvedor configure e execute a aplicação sem dificuldades.
+- [ ] **Manual do usuário disponível:** Um manual foi criado para orientar o cliente sobre o funcionamento da aplicação.
 
 ---
 ## 📜 Product Backlog <a name="backlog"></a>
@@ -249,101 +246,54 @@ Uma User Story é considerada concluída quando:
 > **Período:** 16/03/2026 à 05/04/2026
 > **Foco:** Estrutura base do sistema — o juiz envia a petição, o sistema identifica informações jurídicas relevantes, consulta a base de precedentes e retorna os resultados com classificação de aplicabilidade.
 
----
-
-#### US01 — Envio de petição inicial em PDF
-
-**User Story:** Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente.
-
-**RF:** RF1 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
-
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo da tela de upload validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
-
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
+|:----:|:----------:|:----------:|------------|----|:------:|
+| 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | 🔲 |
+| 2 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | 🔲 |
+| 3 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | 🔲 |
+| 4 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | 🔲 |
 
 ---
 
-#### US02 — Identificação automática de informações jurídicas
+<details>
+<summary>US01 — Envio de petição inicial em PDF</summary>
 
-**User Story:** Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos.
+**Critérios de Aceitação**
+- [ ] O sistema deve aceitar arquivos exclusivamente no formato PDF.
+- [ ] O envio deve ser confirmado visualmente ao usuário após o upload.
+- [ ] Arquivos inválidos ou corrompidos devem exibir mensagem de erro clara.
 
-**RF:** RF2 | **Prioridade:** Alta | **Estimativa:** 8 | **Status:** 🔲
+</details>
 
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo validado pelo cliente (quando aplicável)
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
+<details>
+<summary>US02 — Identificação automática de informações jurídicas</summary>
 
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+**Critérios de Aceitação**
+- [ ] O sistema deve extrair automaticamente as informações jurídicas relevantes da petição enviada.
+- [ ] As informações extraídas devem ser utilizadas como base para a consulta à base de precedentes.
+- [ ] O processamento deve ocorrer sem necessidade de intervenção manual do usuário.
 
----
+</details>
 
-#### US03 — Visualização de lista de precedentes relacionados
+<details>
+<summary>US03 — Visualização de lista de precedentes relacionados</summary>
 
-**User Story:** Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas.
+**Critérios de Aceitação**
+- [ ] O sistema deve retornar ao menos um precedente relacionado ao conteúdo da petição.
+- [ ] Os precedentes devem ser exibidos em lista ordenada por grau de relevância.
+- [ ] Cada item da lista deve apresentar informações básicas de identificação do precedente.
 
-**RF:** RF3, RF4 | **Prioridade:** Alta | **Estimativa:** 8 | **Status:** 🔲
+</details>
 
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo da tela de resultados validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
+<details>
+<summary>US04 — Classificação de aplicabilidade dos precedentes</summary>
 
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+**Critérios de Aceitação**
+- [ ] Cada precedente deve ser classificado como "Aplicável", "Possivelmente aplicável" ou "Não aplicável".
+- [ ] A classificação deve ser visualmente distinta para cada categoria.
+- [ ] A lógica de classificação deve ser baseada no percentual de similaridade calculado.
 
----
-
-#### US04 — Classificação de aplicabilidade dos precedentes
-
-**User Story:** Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária.
-
-**RF:** RF5 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
-
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo com representação visual das categorias validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
-
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+</details>
 
 </details>
 
@@ -357,101 +307,54 @@ Uma User Story é considerada concluída quando:
 > **Período:** 13/04/2026 à 03/05/2026
 > **Foco:** Geração automática de resumo da petição e síntese explicativa por precedente.
 
----
-
-#### US05 — Percentual de similaridade por precedente
-
-**User Story:** Como juiz, quero ver o percentual de similaridade de cada precedente em relação ao caso, para que eu compreenda o grau de proximidade entre as decisões.
-
-**RF:** RF5 | **Prioridade:** Alta | **Estimativa:** 3 | **Status:** 🔲
-
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (3 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo validado pelo cliente (quando aplicável)
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
-
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
+|:----:|:----------:|:----------:|------------|----|:------:|
+| 5 | Alta | 3 | Como juiz, quero ver o percentual de similaridade de cada precedente em relação ao caso, para que eu compreenda o grau de proximidade entre as decisões. | RF5 | 🔲 |
+| 6 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
+| 7 | Alta | 3 | Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema. | RF6 | 🔲 |
+| 8 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
 
 ---
 
-#### US06 — Informações detalhadas do precedente
+<details>
+<summary>US05 — Percentual de similaridade por precedente</summary>
 
-**User Story:** Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão.
+**Critérios de Aceitação**
+- [ ] O percentual de similaridade deve ser calculado e exibido para cada precedente listado.
+- [ ] O valor deve ser apresentado em formato numérico percentual (ex.: 87%).
+- [ ] O cálculo deve ser coerente com o conteúdo da petição enviada.
 
-**RF:** RF6 | **Prioridade:** Alta | **Estimativa:** 5 | **Status:** 🔲
+</details>
 
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo da tela de detalhe do precedente validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
+<details>
+<summary>US06 — Informações detalhadas do precedente</summary>
 
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+**Critérios de Aceitação**
+- [ ] Os campos tribunal, tema, enunciado e status devem ser exibidos para cada precedente.
+- [ ] Campos indisponíveis na base de dados devem ser sinalizados como "Não disponível".
+- [ ] As informações devem ser apresentadas de forma estruturada e legível.
 
----
+</details>
 
-#### US07 — Exibição da tese firmada quando disponível
+<details>
+<summary>US07 — Exibição da tese firmada quando disponível</summary>
 
-**User Story:** Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema.
+**Critérios de Aceitação**
+- [ ] A tese firmada deve ser exibida quando disponível na base de dados do precedente.
+- [ ] O campo deve ser omitido ou sinalizado como indisponível quando ausente.
+- [ ] A exibição deve ser visualmente diferenciada dos demais campos do precedente.
 
-**RF:** RF6 | **Prioridade:** Alta | **Estimativa:** 3 | **Status:** 🔲
+</details>
 
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (3 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo validado pelo cliente (quando aplicável)
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
+<details>
+<summary>US08 — Resumo automático da petição</summary>
 
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+**Critérios de Aceitação**
+- [ ] O sistema deve gerar automaticamente um resumo a partir do conteúdo da petição enviada.
+- [ ] O resumo deve ser exibido na tela de resultados antes da lista de precedentes.
+- [ ] O conteúdo do resumo deve refletir os pontos centrais identificados na petição.
 
----
-
-#### US08 — Resumo automático da petição
-
-**User Story:** Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo.
-
-**RF:** RF8 | **Prioridade:** Média | **Estimativa:** 8 | **Status:** 🔲
-
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo da seção de resumo na tela de resultados validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
-
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+</details>
 
 </details>
 
@@ -465,77 +368,43 @@ Uma User Story é considerada concluída quando:
 > **Período:** 11/05/2026 à 31/05/2026
 > **Foco:** Completar a experiência do usuário com histórico de análises e exportação de relatórios.
 
----
-
-#### US09 — Síntese explicativa por precedente
-
-**User Story:** Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional.
-
-**RF:** RF7 | **Prioridade:** Média | **Estimativa:** 8 | **Status:** 🔲
-
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (8 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo da exibição da síntese por precedente validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
-
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+| RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
+|:----:|:----------:|:----------:|------------|----|:------:|
+| 9 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
+| 10 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
+| 11 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
 
 ---
 
-#### US10 — Histórico de petições analisadas
+<details>
+<summary>US09 — Síntese explicativa por precedente</summary>
 
-**User Story:** Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente.
+**Critérios de Aceitação**
+- [ ] O sistema deve gerar uma explicação individual para cada precedente retornado.
+- [ ] A explicação deve indicar a relação entre o precedente e o caso analisado.
+- [ ] O conteúdo deve ser exibido de forma acessível junto ao respectivo precedente.
 
-**RF:** — | **Prioridade:** Baixa | **Estimativa:** 5 | **Status:** 🔲
+</details>
 
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo da tela de histórico validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
+<details>
+<summary>US10 — Histórico de petições analisadas</summary>
 
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+**Critérios de Aceitação**
+- [ ] O histórico deve listar todas as petições analisadas pelo usuário com data e nome do arquivo.
+- [ ] Cada entrada deve permitir acesso aos resultados da análise correspondente.
+- [ ] Os dados devem persistir entre sessões do usuário.
 
----
+</details>
 
-#### US11 — Exportação do relatório em PDF
+<details>
+<summary>US11 — Exportação do relatório em PDF</summary>
 
-**User Story:** Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo.
+**Critérios de Aceitação**
+- [ ] O relatório deve ser exportado em PDF contendo resumo, precedentes e classificações.
+- [ ] O download deve ser iniciado diretamente pela tela de resultados.
+- [ ] O arquivo gerado deve estar formatado de forma legível e organizada.
 
-**RF:** — | **Prioridade:** Baixa | **Estimativa:** 5 | **Status:** 🔲
-
-**Definition of Ready (DoR)**
-- [ ] User Story completa: requisitos descritos em formato de User Story e planejados para caber na sprint
-- [ ] Tarefas detalhadas e atribuídas: ao menos uma task detalhada e atribuída a um responsável
-- [ ] Critérios de aceitação definidos: critérios bem estabelecidos para validação da entrega
-- [ ] Estimativa definida: esforço estimado pelo time (5 pts)
-- [ ] Wireframe/Mockup aprovado: protótipo do relatório PDF validado pelo cliente
-- [ ] Modelo de dados finalizado: estrutura de dados definida e documentada
-- [ ] Ambiente de desenvolvimento pronto: time com acesso a todos os ambientes, ferramentas e permissões necessárias
-
-**Definition of Done (DoD)**
-- [ ] Critérios de aceitação validados: todos os critérios foram atendidos e verificados
-- [ ] Código-fonte completo e padronizado: 100% implementado, refatorado e seguindo os padrões de qualidade definidos
-- [ ] Commits organizados e documentados: seguindo a nomenclatura acordada, segmentados e com histórico claro
-- [ ] Guia de instalação detalhado: documentação clara e completa para configurar e executar a aplicação
-- [ ] Manual do usuário disponível: manual criado para orientar o cliente sobre o funcionamento da funcionalidade
+</details>
 
 </details>
 
