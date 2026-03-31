@@ -197,14 +197,13 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 ## ✅ Definition of Ready (DoR) <a name="dor"></a>
 
-- [ ] **User Stories completas:** Todos os requisitos descritos em User Stories planejadas para caber na sprint.
-- [ ] **Tarefas detalhadas e atribuídas:** Cada User Story deve ter ao menos uma task detalhada e atribuída a um responsável.
-- [ ] **Critérios de aceitação definidos:** Cada User Story deve ter critérios de aceitação bem estabelecidos.
-- [ ] **Estimativas definidas:** Todas as User Stories devem ter uma estimativa de esforço/tamanho feita pelo time.
-- [ ] **Wireframe/Mockup aprovados:** O cliente deve ter validado e aprovado os protótipos visuais.
-- [ ] **Modelo de dados finalizado:** Estrutura de dados completamente definida e documentada.
-- [ ] **Testes de aceitação definidos:** Incluindo testes sugeridos pelo cliente e testes de aceitação.
-- [ ] **Ambiente de desenvolvimento pronto:** O time deve ter acesso a todos os ambientes, ferramentas e permissões necessárias.
+- [x] **User Stories completas:** Todos os requisitos descritos em User Stories planejadas para caber na sprint.
+- [x] **Tarefas detalhadas e atribuídas:** Cada User Story deve ter ao menos uma task detalhada e atribuída a um responsável.
+- [x] **Critérios de aceitação definidos:** Cada User Story deve ter critérios de aceitação bem estabelecidos.
+- [x] **Estimativas definidas:** Todas as User Stories devem ter uma estimativa de esforço/tamanho feita pelo time.
+- [x] **Wireframe/Mockup aprovados:** O cliente deve ter validado e aprovado os protótipos visuais.
+- [x] **Modelo de dados finalizado:** Estrutura de dados completamente definida e documentada.
+- [x] **Ambiente de desenvolvimento pronto:** O time deve ter acesso a todos os ambientes, ferramentas e permissões necessárias.
 
 ---
 
