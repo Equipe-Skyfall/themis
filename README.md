@@ -4,7 +4,7 @@
 
 > _A API se trata de um projeto submetido à metodologia de ensino em implantação na Fatec São José dos Campos, do qual os alunos formam equipes baseadas na metodologia ágil SCRUM, tendo um aluno como Scrum Master, um sendo o Product Owner e o restante dos integrantes como Dev Team._
 
-<img src="https://raw.githubusercontent.com/Equipe-Skyfall/themis/main/docs/themisbanner.jpg">
+<img src="docs/themisbanner.jpg">
 
 ---
 
@@ -174,7 +174,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 ## 🏗 Arquitetura <a name="arquitetura"></a>
 
-<img src="docs/themis_architecture.png" alt="Arquitetura do sistema Themis" width="800">
+<img src="docs/themisarquitetura.png" alt="Arquitetura do sistema Themis" width="800">
 
 ---
 
@@ -182,14 +182,14 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 <table>
   <tr>
-    <td align="center" valign="top"><strong>Página Principal</strong><br><img src="docs/Página Principal.png" alt="Wireframe - Página Principal" width="280"></td>
-    <td align="center" valign="top"><strong>Cadastro</strong><br><img src="docs/Cadastro.png" alt="Wireframe - Cadastro" width="280"></td>
-    <td align="center" valign="top"><strong>Nova Análise</strong><br><img src="docs/Nova Análise.png" alt="Wireframe - Nova Análise" width="280"></td>
+    <td align="center" valign="top"><strong>Página Principal</strong><br><img src="docs/Wireframe/Página Principal.png" alt="Wireframe - Página Principal" width="280"></td>
+    <td align="center" valign="top"><strong>Cadastro</strong><br><img src="docs/Wireframe/Cadastro.png" alt="Wireframe - Cadastro" width="280"></td>
+    <td align="center" valign="top"><strong>Nova Análise</strong><br><img src="docs/Wireframe/Nova Análise.png" alt="Wireframe - Nova Análise" width="280"></td>
   </tr>
   <tr>
-    <td align="center" valign="top"><strong>Resultados</strong><br><img src="docs/Resultados.png" alt="Wireframe - Resultados" width="280"></td>
-    <td align="center" valign="top"><strong>Resultado (Modal)</strong><br><img src="docs/Resultado (Modal).png" alt="Wireframe - Resultado (Modal)" width="280"></td>
-    <td align="center" valign="top"><strong>Página do Usuário</strong><br><img src="docs/Página do Usuário.png" alt="Wireframe - Página do Usuário" width="280"></td>
+    <td align="center" valign="top"><strong>Resultados</strong><br><img src="docs/Wireframe/Resultados.png" alt="Wireframe - Resultados" width="280"></td>
+    <td align="center" valign="top"><strong>Resultado (Modal)</strong><br><img src="docs/Wireframe/Resultado (Modal).png" alt="Wireframe - Resultado (Modal)" width="280"></td>
+    <td align="center" valign="top"><strong>Página do Usuário</strong><br><img src="docs/Wireframe/Página do Usuário.png" alt="Wireframe - Página do Usuário" width="280"></td>
   </tr>
 </table>
 
@@ -228,9 +228,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | 6 | 1 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
 | 7 | 1 | Alta | 3 | Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema. | RF6 | 🔲 |
 | 8 | 2 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
-| 10 | 2 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
-| 12 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
-| 13 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
+| 9 | 2 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
+| 10 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
+| 11 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
 
 ---
 
@@ -246,10 +246,10 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
-| 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | 🔲 |
-| 2 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | 🔲 |
-| 3 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | 🔲 |
-| 4 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | 🔲 |
+| 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | ✅ |
+| 2 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | ✅ |
+| 3 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | ✅ |
+| 4 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | ✅ |
 
 ---
 
@@ -257,9 +257,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US01 — Envio de petição inicial em PDF</summary>
 
 **Critérios de Aceitação**
-- [ ] O sistema deve aceitar arquivos exclusivamente no formato PDF.
-- [ ] O envio deve ser confirmado visualmente ao usuário após o upload.
-- [ ] Arquivos inválidos ou corrompidos devem exibir mensagem de erro clara.
+- [x] O sistema deve aceitar arquivos exclusivamente no formato PDF.
+- [x] O envio deve ser confirmado visualmente ao usuário após o upload.
+- [x] Arquivos inválidos ou corrompidos devem exibir mensagem de erro clara.
 
 </details>
 
@@ -267,9 +267,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US02 — Identificação automática de informações jurídicas</summary>
 
 **Critérios de Aceitação**
-- [ ] O sistema deve extrair automaticamente as informações jurídicas relevantes da petição enviada.
-- [ ] As informações extraídas devem ser utilizadas como base para a consulta à base de precedentes.
-- [ ] O processamento deve ocorrer sem necessidade de intervenção manual do usuário.
+- [x] O sistema deve extrair automaticamente as informações jurídicas relevantes da petição enviada.
+- [x] As informações extraídas devem ser utilizadas como base para a consulta à base de precedentes.
+- [x] O processamento deve ocorrer sem necessidade de intervenção manual do usuário.
 
 </details>
 
@@ -277,9 +277,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US03 — Visualização de lista de precedentes relacionados</summary>
 
 **Critérios de Aceitação**
-- [ ] O sistema deve retornar ao menos um precedente relacionado ao conteúdo da petição.
-- [ ] Os precedentes devem ser exibidos em lista ordenada por grau de relevância.
-- [ ] Cada item da lista deve apresentar informações básicas de identificação do precedente.
+- [x] O sistema deve retornar ao menos um precedente relacionado ao conteúdo da petição.
+- [x] Os precedentes devem ser exibidos em lista ordenada por grau de relevância.
+- [x] Cada item da lista deve apresentar informações básicas de identificação do precedente.
 
 </details>
 
@@ -287,9 +287,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US04 — Classificação de aplicabilidade dos precedentes</summary>
 
 **Critérios de Aceitação**
-- [ ] Cada precedente deve ser classificado como "Aplicável", "Possivelmente aplicável" ou "Não aplicável".
-- [ ] A classificação deve ser visualmente distinta para cada categoria.
-- [ ] A lógica de classificação deve ser baseada no percentual de similaridade calculado.
+- [x] Cada precedente deve ser classificado como "Aplicável", "Possivelmente aplicável" ou "Não aplicável".
+- [x] A classificação deve ser visualmente distinta para cada categoria.
+- [x] A lógica de classificação deve ser baseada no percentual de similaridade calculado.
 
 </details>
 
