@@ -99,7 +99,6 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 ### 📃 Estrutura de Branches
 - **Main** — Estado principal que armazena a versão estável do projeto
 - **Dev** — Estado de desenvolvimento atual
-- **Sprint X** — Instância de todos os repositórios ao fim da Sprint X
 
 ### ⏳ Status do projeto: 0/3 Sprints
 
