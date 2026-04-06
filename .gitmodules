@@ -1,0 +1,6 @@
+[submodule "themis-app"]
+	path = themis-app
+	url = https://github.com/Equipe-Skyfall/themis-app.git
+[submodule "themis-back"]
+	path = themis-back
+	url = https://github.com/Equipe-Skyfall/themis-back.git
