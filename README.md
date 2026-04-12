@@ -157,7 +157,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | RF6 | Exibição de dados estruturados | O sistema deve apresentar as informações de cada precedente, incluindo tribunal de origem, tema, enunciado, status e tese firmada quando disponível. |
 | RF7 | Síntese explicativa | O sistema deve gerar uma explicação resumida que indique a relação entre o precedente identificado e o caso analisado. |
 | RF8 | Geração de resumo | O sistema deve gerar um resumo automático da petição e apresentá-lo na tela de resultados, destacando as principais informações do caso. |
- 
+
 
 ### Requisitos Não Funcionais
 
@@ -215,6 +215,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 - [ ] **Manual do usuário disponível:** Um manual foi criado para orientar o cliente sobre o funcionamento da aplicação.
 
 ---
+
 ## 📜 Product Backlog <a name="backlog"></a>
 
 | RANK | SPRINT | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
@@ -223,11 +224,11 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | 2 | 1 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | 🔲 |
 | 3 | 1 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | 🔲 |
 | 4 | 1 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | 🔲 |
-| 5 | 1 | Alta | 3 | Como juiz, quero ver o percentual de similaridade de cada precedente em relação ao caso, para que eu compreenda o grau de proximidade entre as decisões. | RF5 | 🔲 |
-| 6 | 1 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
-| 7 | 1 | Alta | 3 | Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema. | RF6 | 🔲 |
+| 5 | 2 | Alta | 3 | Como juiz, quero ver o percentual de similaridade de cada precedente em relação ao caso, para que eu compreenda o grau de proximidade entre as decisões. | RF5 | 🔲 |
+| 6 | 2 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
+| 7 | 2 | Alta | 3 | Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema. | RF6 | 🔲 |
 | 8 | 2 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
-| 9 | 2 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
+| 9 | 3 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
 | 10 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
 | 11 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
 
@@ -245,10 +246,10 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
-| 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | ✅ |
-| 2 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | ✅ |
-| 3 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | ✅ |
-| 4 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | ✅ |
+| 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | 🔲 |
+| 2 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | 🔲 |
+| 3 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | 🔲 |
+| 4 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | 🔲 |
 
 ---
 
@@ -256,9 +257,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US01 — Envio de petição inicial em PDF</summary>
 
 **Critérios de Aceitação**
-- [x] O sistema deve aceitar arquivos exclusivamente no formato PDF.
-- [x] O envio deve ser confirmado visualmente ao usuário após o upload.
-- [x] Arquivos inválidos ou corrompidos devem exibir mensagem de erro clara.
+- [ ] O sistema deve aceitar arquivos exclusivamente no formato PDF.
+- [ ] O envio deve ser confirmado visualmente ao usuário após o upload.
+- [ ] Arquivos inválidos ou corrompidos devem exibir mensagem de erro clara.
 
 </details>
 
@@ -266,9 +267,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US02 — Identificação automática de informações jurídicas</summary>
 
 **Critérios de Aceitação**
-- [x] O sistema deve extrair automaticamente as informações jurídicas relevantes da petição enviada.
-- [x] As informações extraídas devem ser utilizadas como base para a consulta à base de precedentes.
-- [x] O processamento deve ocorrer sem necessidade de intervenção manual do usuário.
+- [ ] O sistema deve extrair automaticamente as informações jurídicas relevantes da petição enviada.
+- [ ] As informações extraídas devem ser utilizadas como base para a consulta à base de precedentes.
+- [ ] O processamento deve ocorrer sem necessidade de intervenção manual do usuário.
 
 </details>
 
@@ -276,9 +277,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US03 — Visualização de lista de precedentes relacionados</summary>
 
 **Critérios de Aceitação**
-- [x] O sistema deve retornar ao menos um precedente relacionado ao conteúdo da petição.
-- [x] Os precedentes devem ser exibidos em lista ordenada por grau de relevância.
-- [x] Cada item da lista deve apresentar informações básicas de identificação do precedente.
+- [ ] O sistema deve retornar ao menos um precedente relacionado ao conteúdo da petição.
+- [ ] Os precedentes devem ser exibidos em lista ordenada por grau de relevância.
+- [ ] Cada item da lista deve apresentar informações básicas de identificação do precedente.
 
 </details>
 
@@ -286,9 +287,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <summary>US04 — Classificação de aplicabilidade dos precedentes</summary>
 
 **Critérios de Aceitação**
-- [x] Cada precedente deve ser classificado como "Aplicável", "Possivelmente aplicável" ou "Não aplicável".
-- [x] A classificação deve ser visualmente distinta para cada categoria.
-- [x] A lógica de classificação deve ser baseada no percentual de similaridade calculado.
+- [ ] Cada precedente deve ser classificado como "Aplicável", "Possivelmente aplicável" ou "Não aplicável".
+- [ ] A classificação deve ser visualmente distinta para cada categoria.
+- [ ] A lógica de classificação deve ser baseada no percentual de similaridade calculado.
 
 </details>
 
@@ -302,7 +303,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <br>
 
 > **Período:** 13/04/2026 à 03/05/2026
-> **Foco:** Geração automática de resumo da petição e síntese explicativa por precedente.
+> **Foco:** Exibição de informações detalhadas dos precedentes e geração automática de resumo da petição.
 
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
@@ -363,7 +364,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 <br>
 
 > **Período:** 11/05/2026 à 31/05/2026
-> **Foco:** Completar a experiência do usuário com histórico de análises e exportação de relatórios.
+> **Foco:** Completar a experiência do usuário com síntese explicativa por precedente, histórico de análises e exportação de relatórios.
 
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
@@ -406,6 +407,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 </details>
 
 ---
+
 ## Links Úteis <a name="links"></a>
 
 - [Base de Precedentes Pangea](https://pangeabnp.pdpj.jus.br/)
@@ -423,5 +425,5 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | <img src="https://avatars.githubusercontent.com/u/144804717?v=4" width="75px"> | Dev Team | Fábio Hiroshi | [LinkedIn](https://www.linkedin.com/in/f%C3%A1bio-hiroshi-5393a51a0) | [GitHub](https://github.com/FabioHiros) |
 | <img src="https://avatars.githubusercontent.com/u/162117916?v=4" width="75px"> | Dev Team | João Vitor Rossi Ferreira | [LinkedIn](https://www.linkedin.com/in/joão-rossi-7311a0301/) | [GitHub](https://github.com/joaorossiferreira) |
 | <img src="https://avatars.githubusercontent.com/u/95691713?v=4" width="75px"> | Dev Team | Kathellyn Caroline Alves dos Santos | [LinkedIn](https://www.linkedin.com/in/kathellyn-caroline-a562101b9) | [GitHub](https://github.com/CarolineKathellyn) |
-| <img src="https://avatars.githubusercontent.com/u/161987258?v=4" width="75px"> | Product Owner | Victor Daniel |  [Linkedin](https://www.linkedin.com/in/victor-daniel-ramos-bessa-1436a3215/)  | [GitHub](https://github.com/victordanielrb)    |
+| <img src="https://avatars.githubusercontent.com/u/161987258?v=4" width="75px"> | Product Owner | Victor Daniel | [Linkedin](https://www.linkedin.com/in/victor-daniel-ramos-bessa-1436a3215/) | [GitHub](https://github.com/victordanielrb) |
 | <img src="https://avatars.githubusercontent.com/u/162117908?v=4" width="75px"> | Scrum Master | Paulo Henrique Martins de Almeida | [LinkedIn](https://www.linkedin.com/in/paulo-almeida-3102452a7/) | [GitHub](https://github.com/pauloalmeida46) |
