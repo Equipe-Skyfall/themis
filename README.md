@@ -122,7 +122,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 > Exemplo: `STYLE - Adiciona comentários no código para facilitar a leitura`
 
 **REFACTOR**: Refatora o código sem adicionar funcionalidades ou corrigir bugs.
-> Exemplo: `REFACTOR - Refatora o código, deixando-o mais leve`
+> Exemplo: `REFACTOR - Refatora o código, deixando-o mais lege`
 
 **TEST**: Adiciona, modifica ou remove testes.
 > Exemplo: `TEST - Adiciona teste para o componente de login`
@@ -157,7 +157,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | RF6 | Exibição de dados estruturados | O sistema deve apresentar as informações de cada precedente, incluindo tribunal de origem, tema, enunciado, status e tese firmada quando disponível. |
 | RF7 | Síntese explicativa | O sistema deve gerar uma explicação resumida que indique a relação entre o precedente identificado e o caso analisado. |
 | RF8 | Geração de resumo | O sistema deve gerar um resumo automático da petição e apresentá-lo na tela de resultados, destacando as principais informações do caso. |
-
+ 
 
 ### Requisitos Não Funcionais
 
@@ -218,179 +218,19 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 ## 📜 Product Backlog <a name="backlog"></a>
 
-<details>
-<summary><strong>US01 — Envio de petição inicial em PDF</strong> · Sprint 1 · Alta · 5pts · RF1 · ✅</summary>
-
-<br>
-
-**Como** juiz, **quero** enviar uma petição inicial em PDF pelo aplicativo, **para que** o sistema possa analisá-la automaticamente.
-
-**Critérios de Aceitação**
-- [x] O sistema deve aceitar arquivos exclusivamente no formato PDF.
-- [x] O envio deve ser confirmado visualmente ao usuário após o upload.
-- [x] Arquivos inválidos ou corrompidos devem exibir mensagem de erro clara.
-
-</details>
-
----
-
-<details>
-<summary><strong>US02 — Identificação automática de informações jurídicas</strong> · Sprint 1 · Alta · 8pts · RF2 · ✅</summary>
-
-<br>
-
-**Como** juiz, **quero** que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, **para que** os precedentes encontrados sejam precisos.
-
-**Critérios de Aceitação**
-- [x] O sistema deve extrair automaticamente as informações jurídicas relevantes da petição enviada.
-- [x] As informações extraídas devem ser utilizadas como base para a consulta à base de precedentes.
-- [x] O processamento deve ocorrer sem necessidade de intervenção manual do usuário.
-
-</details>
-
----
-
-<details>
-<summary><strong>US03 — Visualização de lista de precedentes relacionados</strong> · Sprint 1 · Alta · 8pts · RF3, RF4 · ✅</summary>
-
-<br>
-
-**Como** juiz, **quero** visualizar uma lista de precedentes da base jurídica relacionados ao caso, **para que** eu identifique rapidamente as decisões mais próximas.
-
-**Critérios de Aceitação**
-- [x] O sistema deve retornar ao menos um precedente relacionado ao conteúdo da petição.
-- [x] Os precedentes devem ser exibidos em lista ordenada por grau de relevância.
-- [x] Cada item da lista deve apresentar informações básicas de identificação do precedente.
-
-</details>
-
----
-
-<details>
-<summary><strong>US04 — Classificação de aplicabilidade dos precedentes</strong> · Sprint 1 · Alta · 5pts · RF5 · ✅</summary>
-
-<br>
-
-**Como** juiz, **quero** ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, **para que** eu saiba quais merecem atenção prioritária.
-
-**Critérios de Aceitação**
-- [x] Cada precedente deve ser classificado como "Aplicável", "Possivelmente aplicável" ou "Não aplicável".
-- [x] A classificação deve ser visualmente distinta para cada categoria.
-- [x] A lógica de classificação deve ser baseada no percentual de similaridade calculado.
-
-</details>
-
----
-
-<details>
-<summary><strong>US05 — Percentual de similaridade por precedente</strong> · Sprint 2 · Alta · 3pts · RF5 · 🔲</summary>
-
-<br>
-
-**Como** juiz, **quero** ver o percentual de similaridade de cada precedente em relação ao caso, **para que** eu compreenda o grau de proximidade entre as decisões.
-
-**Critérios de Aceitação**
-- [ ] O percentual de similaridade deve ser calculado e exibido para cada precedente listado.
-- [ ] O valor deve ser apresentado em formato numérico percentual (ex.: 87%).
-- [ ] O cálculo deve ser coerente com o conteúdo da petição enviada.
-
-</details>
-
----
-
-<details>
-<summary><strong>US06 — Informações detalhadas do precedente</strong> · Sprint 2 · Alta · 5pts · RF6 · 🔲</summary>
-
-<br>
-
-**Como** juiz, **quero** visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, **para que** eu avalie sua aplicabilidade com precisão.
-
-**Critérios de Aceitação**
-- [ ] Os campos tribunal, tema, enunciado e status devem ser exibidos para cada precedente.
-- [ ] Campos indisponíveis na base de dados devem ser sinalizados como "Não disponível".
-- [ ] As informações devem ser apresentadas de forma estruturada e legível.
-
-</details>
-
----
-
-<details>
-<summary><strong>US07 — Exibição da tese firmada quando disponível</strong> · Sprint 2 · Alta · 3pts · RF6 · 🔲</summary>
-
-<br>
-
-**Como** juiz, **quero** que a tese firmada de um precedente seja exibida quando disponível, **para que** eu tenha acesso à posição consolidada sobre o tema.
-
-**Critérios de Aceitação**
-- [ ] A tese firmada deve ser exibida quando disponível na base de dados do precedente.
-- [ ] O campo deve ser omitido ou sinalizado como indisponível quando ausente.
-- [ ] A exibição deve ser visualmente diferenciada dos demais campos do precedente.
-
-</details>
-
----
-
-<details>
-<summary><strong>US08 — Resumo automático da petição</strong> · Sprint 2 · Média · 8pts · RF8 · 🔲</summary>
-
-<br>
-
-**Como** juiz, **quero** que o sistema gere automaticamente um resumo da petição recebida, **para que** eu compreenda os pontos centrais do caso sem precisar ler o documento completo.
-
-**Critérios de Aceitação**
-- [ ] O sistema deve gerar automaticamente um resumo a partir do conteúdo da petição enviada.
-- [ ] O resumo deve ser exibido na tela de resultados antes da lista de precedentes.
-- [ ] O conteúdo do resumo deve refletir os pontos centrais identificados na petição.
-
-</details>
-
----
-
-<details>
-<summary><strong>US09 — Síntese explicativa por precedente</strong> · Sprint 3 · Média · 8pts · RF7 · 🔲</summary>
-
-<br>
-
-**Como** juiz, **quero** ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, **para que** eu compreenda a conexão jurídica sem pesquisa adicional.
-
-**Critérios de Aceitação**
-- [ ] O sistema deve gerar uma explicação individual para cada precedente retornado.
-- [ ] A explicação deve indicar a relação entre o precedente e o caso analisado.
-- [ ] O conteúdo deve ser exibido de forma acessível junto ao respectivo precedente.
-
-</details>
-
----
-
-<details>
-<summary><strong>US10 — Histórico de petições analisadas</strong> · Sprint 3 · Baixa · 5pts · — · 🔲</summary>
-
-<br>
-
-**Como** juiz, **quero** acessar o histórico das petições que já analisei, **para que** eu revise resultados anteriores sem precisar enviar o documento novamente.
-
-**Critérios de Aceitação**
-- [ ] O histórico deve listar todas as petições analisadas pelo usuário com data e nome do arquivo.
-- [ ] Cada entrada deve permitir acesso aos resultados da análise correspondente.
-- [ ] Os dados devem persistir entre sessões do usuário.
-
-</details>
-
----
-
-<details>
-<summary><strong>US11 — Exportação do relatório em PDF</strong> · Sprint 3 · Baixa · 5pts · — · 🔲</summary>
-
-<br>
-
-**Como** juiz, **quero** exportar o relatório de análise em PDF, **para que** eu arquive ou compartilhe os resultados com outros membros do processo.
-
-**Critérios de Aceitação**
-- [ ] O relatório deve ser exportado em PDF contendo resumo, precedentes e classificações.
-- [ ] O download deve ser iniciado diretamente pela tela de resultados.
-- [ ] O arquivo gerado deve estar formatado de forma legível e organizada.
-
-</details>
+| RANK | SPRINT | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
+|:----:|:------:|:----------:|:----------:|------------|----|:------:|
+| 1 | 1 | Alta | 5 | Como juiz, quero enviar uma petição inicial em PDF pelo aplicativo, para que o sistema possa analisá-la automaticamente. | RF1 | ✅ |
+| 2 | 1 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | ✅ |
+| 3 | 1 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | ✅ |
+| 4 | 1 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | ✅ |
+| 5 | 2 | Alta | 3 | Como juiz, quero ver o percentual de similaridade de cada precedente em relação ao caso, para que eu compreenda o grau de proximidade entre as decisões. | RF5 | 🔲 |
+| 6 | 2 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
+| 7 | 2 | Alta | 3 | Como juiz, quero que a tese firmada de um precedente seja exibida quando disponível, para que eu tenha acesso à posição consolidada sobre o tema. | RF6 | 🔲 |
+| 8 | 2 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
+| 9 | 3 | Média | 8 | Como juiz, quero ler uma explicação sobre por que cada precedente se relaciona ao caso analisado, para que eu compreenda a conexão jurídica sem pesquisa adicional. | RF7 | 🔲 |
+| 10 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
+| 11 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
 
 ---
 
