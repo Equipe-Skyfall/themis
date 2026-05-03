@@ -305,9 +305,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
-| 5 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
-| 6 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 | 🔲 |
-| 7 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
+| 5 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 |  ✅  |
+| 6 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 |  ✅  |
+| 7 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 |  ✅ |
 
 ---
 
