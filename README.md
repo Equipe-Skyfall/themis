@@ -130,9 +130,6 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 **PERF**: Melhora a performance.
 > Exemplo: `PERF - Otimiza a execução de consultas no banco de dados`
 
-**BUILD**: Altera o sistema de build ou dependências externas.
-> Exemplo: `BUILD - Adiciona um Dockerfile para o ambiente de produção`
-
 **REVERT**: Reverte um commit anterior.
 > Exemplo: `REVERT - Reverte a adição de autenticação de middleware`
 
@@ -224,9 +221,9 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | 2 | 1 | Alta | 8 | Como juiz, quero que o sistema identifique automaticamente as informações jurídicas relevantes da petição enviada, para que os precedentes encontrados sejam precisos. | RF2 | ✅ |
 | 3 | 1 | Alta | 8 | Como juiz, quero visualizar uma lista de precedentes da base jurídica relacionados ao caso, para que eu identifique rapidamente as decisões mais próximas. | RF3, RF4 | ✅ |
 | 4 | 1 | Alta | 5 | Como juiz, quero ver a classificação de aplicabilidade de cada precedente — Aplicável, Possivelmente aplicável ou Não aplicável —, para que eu saiba quais merecem atenção prioritária. | RF5 | ✅ |
-| 5 | 2 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 | 🔲 |
-| 6 | 2 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 | 🔲 |
-| 7 | 2 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | 🔲 |
+| 5 | 2 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 |✅ |
+| 6 | 2 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 | ✅ |
+| 7 | 3 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 | 🔲 |
 | 8 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
 | 9 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
 
@@ -306,8 +303,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
 | 5 | Alta | 5 | Como juiz, quero visualizar as informações detalhadas de cada precedente — tribunal, tema, enunciado e status —, para que eu avalie sua aplicabilidade com precisão. | RF6 |  ✅  |
-| 6 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 |  ✅  |
-| 7 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 |  ✅ |
+| 6 | Média | 8 | Como juiz, quero que o sistema gere automaticamente um resumo da petição recebida, para que eu compreenda os pontos centrais do caso sem precisar ler o documento completo. | RF8 |  ✅ |
 
 ---
 
@@ -322,17 +318,7 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 </details>
 
 <details>
-<summary>US06 — Síntese de aplicabilidade por precedente</summary>
-
-**Critérios de Aceitação**
-- [ ] A síntese de aplicabilidade deve ser exibida quando disponível na base de dados do precedente.
-- [ ] O campo deve ser omitido ou sinalizado como indisponível quando ausente.
-- [ ] A exibição deve ser visualmente diferenciada dos demais campos do precedente.
-
-</details>
-
-<details>
-<summary>US07 — Resumo automático da petição</summary>
+<summary>US06 — Resumo automático da petição</summary>
 
 **Critérios de Aceitação**
 - [ ] O sistema deve gerar automaticamente um resumo a partir do conteúdo da petição enviada.
@@ -355,10 +341,21 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
+| 7 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 | 🔲  |
 | 8 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
 | 9 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
 
 ---
+
+<details>
+<summary>US07 — Síntese de aplicabilidade por precedente</summary>
+
+**Critérios de Aceitação**
+- [ ] A síntese de aplicabilidade deve ser exibida quando disponível na base de dados do precedente.
+- [ ] O campo deve ser omitido ou sinalizado como indisponível quando ausente.
+- [ ] A exibição deve ser visualmente diferenciada dos demais campos do precedente.
+
+</details>
 
 <details>
 <summary>US08 — Histórico de petições analisadas</summary>
