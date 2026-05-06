@@ -77,8 +77,8 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 
 | Sprint | Período | Status | Relatório |
 |:------:|:-------:|:------:|:---------:|
-| 1 | 16/03/2026 à 05/04/2026 | Não Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201) |
-| 2 | 13/04/2026 à 03/05/2026 | Não Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202) |
+| 1 | 16/03/2026 à 05/04/2026 | Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201) |
+| 2 | 13/04/2026 à 03/05/2026 | Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202) |
 | 3 | 11/05/2026 à 31/05/2026 | Não Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/tree/main/docs/Sprint%203) |
 
 ---
