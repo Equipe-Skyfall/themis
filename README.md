@@ -154,6 +154,18 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | RF6 | Exibição de dados estruturados | O sistema deve apresentar as informações de cada precedente, incluindo tribunal de origem, tema, enunciado, status e tese firmada quando disponível. |
 | RF7 | Síntese explicativa | O sistema deve gerar uma explicação resumida que indique a relação entre o precedente identificado e o caso analisado. |
 | RF8 | Geração de resumo | O sistema deve gerar um resumo automático da petição e apresentá-lo na tela de resultados, destacando as principais informações do caso. |
+| RF9 | Identificação estruturada do caso | O sistema deve aceitar texto livre e/ou formulário guiado e extrair matéria, tese e pedidos principais para uso no fluxo do advogado. |
+| RF10 | Busca de precedentes aplicáveis (Advogado) | O sistema deve consultar a base jurídica a partir do caso estruturado e retornar os precedentes com maior aderência ao contexto informado. |
+| RF11 | Ranqueamento jurídico de precedentes | O sistema deve ranquear precedentes considerando similaridade semântica, aderência fática, atualidade e hierarquia da decisão. |
+| RF12 | Geração de minuta de petição inicial | O sistema deve gerar uma minuta com seções separadas contendo fatos, fundamentos jurídicos, tese central e pedidos, exportável para edição externa. |
+| RF13 | Citações com trechos destacados | O sistema deve exibir os precedentes usados na minuta com trechos relevantes destacados e associados ao ponto que sustentam. |
+| RF14 | Justificativa de aderência do precedente | O sistema deve explicar por que cada precedente foi selecionado, citando elementos fáticos e jurídicos, e sinalizar aderência parcial quando aplicável. |
+| RF15 | Edição assistida da minuta | O usuário deve poder substituir precedentes, ajustar a tese e os pedidos, e o sistema deve recalcular a sugestão a partir das alterações feitas. |
+| RF16 | Classificação e extração da inicial (Julgador) | O sistema deve identificar a peça processual recebida, extrair os elementos essenciais da inicial e alimentar as etapas seguintes da geração de minuta. |
+| RF17 | Busca de precedentes aderentes (Julgador) | O sistema deve usar o caso estruturado como entrada de pesquisa e retornar precedentes relacionados ao objeto da demanda ordenados por relevância jurídica. |
+| RF18 | Geração de minuta de sentença | O sistema deve gerar minuta contendo relatório, fundamentação com precedentes citados, análise de aderência ou distinção e dispositivo sugerido. |
+| RF19 | Sinalização de ausência de precedentes fortes | O sistema deve avisar quando a base retornar poucos precedentes relevantes, diferenciando ausência de precedentes fortes de ausência total de resultados. |
+| RF20 | Contexto do tribunal | O sistema deve considerar o tribunal e a instância informados e ajustar o ranking e o estilo da minuta conforme o contexto decisório esperado. |
  
 
 ### Requisitos Não Funcionais
@@ -226,6 +238,18 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 | 7 | 3 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 | 🔲 |
 | 8 | 3 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
 | 9 | 3 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
+| 10 | 3 | Alta | 8 | Como advogado, quero informar um caso em texto livre ou formulário para que o sistema identifique matéria, tese e pedidos de forma estruturada. | RF9 | 🔲 |
+| 11 | 3 | Alta | 8 | Como advogado, quero que o sistema busque precedentes aplicáveis ao caso para sustentar a minuta da inicial. | RF10 | 🔲 |
+| 12 | 3 | Alta | 8 | Como advogado, quero que os precedentes sejam ranqueados por similaridade, aderência fática, atualidade e hierarquia para priorizar os mais fortes. | RF11 | 🔲 |
+| 13 | 3 | Alta | 13 | Como advogado, quero gerar uma sugestão de petição inicial contendo fatos estruturados, fundamentos jurídicos, tese central e pedidos para acelerar a redação. | RF12 | 🔲 |
+| 14 | 3 | Média | 8 | Como advogado, quero visualizar as citações de precedentes com trechos destacados para validar rapidamente a base jurídica da minuta. | RF13 | 🔲 |
+| 15 | 3 | Média | 5 | Como advogado, quero entender por que cada precedente foi escolhido para confirmar a aderência ao caso sem refazer a pesquisa manualmente. | RF14 | 🔲 |
+| 16 | 3 | Média | 8 | Como advogado, quero editar assistidamente a tese, trocar precedentes e ajustar pedidos para adaptar a minuta ao meu estilo e estratégia. | RF15 | 🔲 |
+| 17 | 3 | Alta | 8 | Como julgador, quero classificar automaticamente as peças processuais e extrair a petição inicial para estruturar a análise do processo. | RF16 | 🔲 |
+| 18 | 3 | Alta | 8 | Como julgador, quero que o sistema busque precedentes aderentes ao caso já estruturado para sustentar a fundamentação da decisão. | RF17 | 🔲 |
+| 19 | 3 | Alta | 13 | Como julgador, quero gerar uma minuta de sentença com relatório, fundamentação, análise de aderência ou distinção e dispositivo sugerido. | RF18 | 🔲 |
+| 20 | 3 | Média | 5 | Como julgador, quero que o sistema sinalize ausência de precedentes fortes para que eu saiba quando a fundamentação depende mais de distinção ou construção jurídica própria. | RF19 | 🔲 |
+| 21 | 3 | Média | 5 | Como julgador, quero que o sistema considere o contexto do tribunal de 2ª instância para ajustar a seleção e a redação da minuta. | RF20 | 🔲 |
 
 ---
 
@@ -332,18 +356,30 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 ---
 
 <details>
-<summary><strong>Sprint 3 — Histórico e Exportação</strong></summary>
+<summary><strong>Sprint 3 — Histórico, Exportação, Assistente ao Advogado e Assistente ao Julgador</strong></summary>
 
 <br>
 
 > **Período:** 11/05/2026 à 31/05/2026
-> **Foco:** Completar a experiência do usuário com histórico de análises e exportação de relatórios.
+> **Foco:** Completar a experiência do usuário com histórico e exportação, e introduzir dois novos fluxos: geração de inicial para o advogado e minuta de decisão para o julgador.
 
 | RANK | PRIORIDADE | ESTIMATIVA | USER STORY | RF | STATUS |
 |:----:|:----------:|:----------:|------------|----|:------:|
 | 7 | Alta | 3 | Como juiz, quero que a síntese de aplicabilidade de um precedente seja exibida quando disponível, para que eu tenha acesso à aplicação do precedente sobre a petição. | RF7 | 🔲  |
 | 8 | Baixa | 5 | Como juiz, quero acessar o histórico das petições que já analisei, para que eu revise resultados anteriores sem precisar enviar o documento novamente. | — | 🔲 |
 | 9 | Baixa | 5 | Como juiz, quero exportar o relatório de análise em PDF, para que eu arquive ou compartilhe os resultados com outros membros do processo. | — | 🔲 |
+| 10 | Alta | 8 | Como advogado, quero informar um caso em texto livre ou formulário para que o sistema identifique matéria, tese e pedidos de forma estruturada. | RF9 | 🔲 |
+| 11 | Alta | 8 | Como advogado, quero que o sistema busque precedentes aplicáveis ao caso para sustentar a minuta da inicial. | RF10 | 🔲 |
+| 12 | Alta | 8 | Como advogado, quero que os precedentes sejam ranqueados por similaridade, aderência fática, atualidade e hierarquia para priorizar os mais fortes. | RF11 | 🔲 |
+| 13 | Alta | 13 | Como advogado, quero gerar uma sugestão de petição inicial contendo fatos estruturados, fundamentos jurídicos, tese central e pedidos para acelerar a redação. | RF12 | 🔲 |
+| 14 | Média | 8 | Como advogado, quero visualizar as citações de precedentes com trechos destacados para validar rapidamente a base jurídica da minuta. | RF13 | 🔲 |
+| 15 | Média | 5 | Como advogado, quero entender por que cada precedente foi escolhido para confirmar a aderência ao caso sem refazer a pesquisa manualmente. | RF14 | 🔲 |
+| 16 | Média | 8 | Como advogado, quero editar assistidamente a tese, trocar precedentes e ajustar pedidos para adaptar a minuta ao meu estilo e estratégia. | RF15 | 🔲 |
+| 17 | Alta | 8 | Como julgador, quero classificar automaticamente as peças processuais e extrair a petição inicial para estruturar a análise do processo. | RF16 | 🔲 |
+| 18 | Alta | 8 | Como julgador, quero que o sistema busque precedentes aderentes ao caso já estruturado para sustentar a fundamentação da decisão. | RF17 | 🔲 |
+| 19 | Alta | 13 | Como julgador, quero gerar uma minuta de sentença com relatório, fundamentação, análise de aderência ou distinção e dispositivo sugerido. | RF18 | 🔲 |
+| 20 | Média | 5 | Como julgador, quero que o sistema sinalize ausência de precedentes fortes para que eu saiba quando a fundamentação depende mais de distinção ou construção jurídica própria. | RF19 | 🔲 |
+| 21 | Média | 5 | Como julgador, quero que o sistema considere o contexto do tribunal de 2ª instância para ajustar a seleção e a redação da minuta. | RF20 | 🔲 |
 
 ---
 
@@ -374,6 +410,135 @@ Nosso projeto consiste em uma plataforma inteligente de análise jurídica em nu
 - [ ] O relatório deve ser exportado em PDF contendo resumo, precedentes e classificações.
 - [ ] O download deve ser iniciado diretamente pela tela de resultados.
 - [ ] O arquivo gerado deve estar formatado de forma legível e organizada.
+
+</details>
+
+---
+
+#### Frente 1 — Assistente ao Advogado
+
+<details>
+<summary>US10 — Identificação estruturada do caso</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve aceitar texto livre e/ou formulário guiado.
+- [ ] O sistema deve extrair matéria, tese e pedidos principais.
+- [ ] O resultado deve ser revisável antes da geração da minuta.
+
+</details>
+
+<details>
+<summary>US11 — Busca de precedentes aplicáveis</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve consultar a base jurídica a partir do caso estruturado.
+- [ ] O sistema deve retornar precedentes com maior aderência ao contexto informado.
+- [ ] O sistema deve permitir refinar a busca com novos termos ou filtros.
+
+</details>
+
+<details>
+<summary>US12 — Ranqueamento jurídico dos precedentes</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve considerar similaridade semântica.
+- [ ] O sistema deve considerar aderência fática.
+- [ ] O sistema deve considerar atualidade e hierarquia do precedente.
+
+</details>
+
+<details>
+<summary>US13 — Geração de minuta de petição inicial</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve gerar uma minuta com seções claramente separadas.
+- [ ] A minuta deve conter fatos, fundamentos jurídicos, tese central e pedidos.
+- [ ] A minuta deve poder ser exportada ou copiada para edição externa.
+
+</details>
+
+<details>
+<summary>US14 — Citações com trechos destacados</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve exibir os precedentes usados na minuta.
+- [ ] O sistema deve destacar trechos relevantes do precedente.
+- [ ] O sistema deve associar cada citação ao ponto da minuta que ela sustenta.
+
+</details>
+
+<details>
+<summary>US15 — Justificativa de aderência do precedente</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve explicar por que cada precedente foi selecionado.
+- [ ] A justificativa deve citar elementos fáticos e jurídicos do caso.
+- [ ] O sistema deve sinalizar quando o precedente tiver aderência parcial ou limitada.
+
+</details>
+
+<details>
+<summary>US16 — Edição assistida da minuta</summary>
+
+**Critérios de Aceitação**
+- [ ] O usuário deve poder substituir precedentes sugeridos.
+- [ ] O usuário deve poder ajustar a tese central e os pedidos.
+- [ ] O sistema deve recalcular a sugestão a partir das alterações feitas.
+
+</details>
+
+---
+
+#### Frente 2 — Assistente ao Julgador
+
+<details>
+<summary>US17 — Classificação e extração da inicial</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve identificar se a peça recebida é uma inicial ou outra peça relevante.
+- [ ] O sistema deve extrair os elementos essenciais da inicial para análise posterior.
+- [ ] O resultado estruturado deve alimentar as etapas seguintes da geração da minuta.
+
+</details>
+
+<details>
+<summary>US18 — Busca de precedentes aderentes</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve usar o caso estruturado como entrada da pesquisa.
+- [ ] O sistema deve retornar precedentes relacionados ao objeto da demanda.
+- [ ] O sistema deve manter a ordenação por relevância jurídica.
+
+</details>
+
+<details>
+<summary>US19 — Minuta de sentença</summary>
+
+**Critérios de Aceitação**
+- [ ] A minuta deve conter relatório resumido dos fatos e do andamento processual.
+- [ ] A fundamentação deve citar precedentes associados ao caso.
+- [ ] A minuta deve apresentar análise de aderência ou distinção.
+- [ ] O dispositivo deve ser sugerido de forma objetiva e separada da fundamentação.
+
+</details>
+
+<details>
+<summary>US20 — Sinalização de ausência de precedentes fortes</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve avisar quando a base retornar poucos precedentes relevantes.
+- [ ] O sistema deve diferenciar ausência de precedentes fortes de ausência total de resultados.
+- [ ] O alerta deve orientar o julgador sobre o nível de confiança da sugestão.
+
+</details>
+
+<details>
+<summary>US21 — Contexto do tribunal</summary>
+
+**Critérios de Aceitação**
+- [ ] O sistema deve considerar o tribunal e a instância informados.
+- [ ] O comportamento do ranking deve variar conforme o contexto do tribunal.
+- [ ] A minuta deve refletir o estilo decisório esperado para a instância.
 
 </details>
 
